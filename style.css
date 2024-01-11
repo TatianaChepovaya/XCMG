@@ -58,6 +58,10 @@ img {
   display: block;
   max-width: 100%;
 }
+header {
+  padding-top: 15px;
+  padding-bottom: 19px;
+}
 .secondary__menu {
   display: none;
 }
@@ -140,6 +144,7 @@ img {
   display: none;
 }
 .hero {
+  padding-top: 29px;
   padding-bottom: 29px;
 }
 .title__main {
@@ -157,6 +162,9 @@ img {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.catalog {
+  padding-bottom: 16px;
 }
 .catalog__list li {
   background: #f4f4f4;
@@ -184,12 +192,58 @@ img {
   border-top-right-radius: 2px;
 }
 
-.catalog__img {
-}
 .catalog__list li img {
 }
+.catalog,
+.repair {
+  padding-bottom: 16px;
+}
+.service__right-part,
+.repair__right-part {
+  background-color: var(--main-dark-color);
+}
+.aboutus {
+  padding-bottom: 14px;
+}
+.aboutus__wraper {
+  background-color: var(--main-blue-color);
+}
+
+.data {
+  padding-bottom: 16px;
+}
+
+.data__container {
+  background-image: url(./img/home4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.data__container li {
+  border-radius: 5px;
+  height: 78px;
+  border-top: 1px solid var(--main-light-color);
+  border-bottom: 1px solid var(--main-light-color);
+}
+.form {
+  padding-bottom: 15px;
+}
+.connection {
+  padding-bottom: 43px;
+}
+footer {
+  padding-top: 33px;
+  padding-bottom: 43px;
+  background-color: var(--main-blue-color);
+}
+
 @media screen and (min-width: 768px) {
+  header {
+    padding-top: 26px;
+    padding-bottom: 0;
+  }
   .hero {
+    padding-top: 26px;
     padding-bottom: 47px;
   }
   .title__main {
@@ -200,6 +254,9 @@ img {
   }
   .title__secondary {
     font-size: 32px;
+  }
+  .catalog {
+    padding-bottom: 48px;
   }
   .catalog__list {
     margin-left: -10px;
@@ -217,5 +274,34 @@ img {
   }
   .catalog__list--text {
     font-size: 18px;
+  }
+  .catalog {
+    padding-bottom: 10px;
+  }
+  .service__container,
+  .repair__container {
+    display: flex;
+  }
+  .repair {
+    padding-bottom: 46px;
+  }
+  .aboutus {
+    padding-bottom: 46px;
+  }
+  .data {
+    padding-bottom: 43px;
+  }
+  .form {
+    padding-bottom: 43px;
+  }
+  .connection {
+    padding-bottom: 70px;
+  }
+  footer {
+    padding-top: 23px;
+    padding-bottom: 46px;
+  }
+  .footer__left-part {
+    display: flex;
   }
 }
